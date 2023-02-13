@@ -13,7 +13,8 @@ string[] array3 = { "Russia", "Denmark", "Kazan" };
 
 int MAX_WORD_LENGTH = 3;
 
-string[] GetShortWordsArray(string[] array)
+// Находим элементы массива которые <=3  и перезаписываем в новый массив string[] result
+string[] GetShortWordsArray(string[] array) 
 {
     int length = array.Length;
     string[] result = new string[length];
@@ -32,6 +33,7 @@ string[] GetShortWordsArray(string[] array)
     return result;
 }
 
+// Вывод массива на экран поэлементно, проверка на отсутсвие элементов в массиве
 void PrintArray(string[] array)
 {
     if (array.Length == 0)
@@ -45,6 +47,7 @@ void PrintArray(string[] array)
     }
 }
 
+// Вывод результатов задачи в упорядоченом виде
 void PrintTask(string[] array)
 {
     Console.WriteLine("Исходный массив:");
